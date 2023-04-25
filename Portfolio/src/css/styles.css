@@ -1,0 +1,60 @@
+.heading {
+	padding: 10% 20%;
+	background-image: url('./kelly-sikkema-tk9RQCq5eQo-unsplash.jpg');
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+	color: aliceblue;
+}
+
+/* parte de apresentação */
+.nome {
+	color: blue;
+}
+#propic {
+	width: 150%;
+}
+#intro {
+	text-align: left;
+	padding-top: 1rem;
+	font-size: 3rem;
+}
+.skill-row {
+	display: flex;
+	justify-content: center;
+}
+a.social {
+	margin: 0 1rem;
+	transition: transform 250ms;
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 30%;
+}
+a.social:hover {
+	transform: translateY(-2px);
+}
+
+.icon {
+	height: 2rem;
+	width: 2rem;
+	margin: 10px;
+}
+
+#main-buttons {
+	padding: 30% 15%;
+	text-align: left;
+}
+#linkedinBtn {
+	color: #1166c2;
+	background-color: white;
+}
+#linkedinBtn:hover {
+	background-color: aqua;
+}
+#gitBtn {
+	color: #161b22;
+	background-color: white;
+}
+#gitBtn:hover {
+	background-color: grey;
+}
