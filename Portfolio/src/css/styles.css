@@ -6,23 +6,27 @@
   background-position: center;
 	color: aliceblue;
 }
-
+body{
+	background-color: #161b22;
+}
 /* parte de apresentação */
 .nome {
 	color: blue;
 }
-#propic {
-	width: 150%;
-}
 #intro {
 	text-align: left;
 	padding-top: 1rem;
-	font-size: 3rem;
+	font-size: 2.7rem;
+}
+#propic {
+	width: 150%;
 }
 .skill-row {
 	display: flex;
 	justify-content: center;
 }
+
+/* Buttons */
 a.social {
 	margin: 0 1rem;
 	transition: transform 250ms;
@@ -57,4 +61,8 @@ a.social:hover {
 }
 #gitBtn:hover {
 	background-color: grey;
+}
+.about-me{
+	display: flex;
+	justify-content: center;
 }

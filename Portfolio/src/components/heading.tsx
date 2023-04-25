@@ -9,7 +9,7 @@ export function Heading() {
 				<Col md={8}>
 					<div id="heading" className="col">
 						<h1 id="intro">
-							Olá, sou <br /> <span className="nome">Artur Jordão</span>
+							Olá, sou <br /> <span className="nome">Artur Jordão</span> Desenvolvedor Full-Stack
 						</h1>
 						<div id="main-buttons">
 							<a
