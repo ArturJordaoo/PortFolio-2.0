@@ -1,4 +1,4 @@
-import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -40,15 +40,25 @@ export function Heading() {
 									<div className="tooltip">GitHub</div>
 									<FontAwesomeIcon className="icon-container" icon={faGithub} />
 								</a>
+								<a
+									className="whatsapp icon"
+									href="https://wa.me/5581982597573"
+									role="button"
+									id="whatsBtn"
+									target="_blank"
+								>
+									<div className="tooltip">WhatsApp</div>
+									<FontAwesomeIcon className="icon-container" icon={faWhatsapp} />
+								</a>
 								
 							</div>
 							
 						</div>
 					</Col>
-					<Col md={4} className="text-center">
+					<Col md={5} className="text-center">
 						<div className="circle-container">
 							<img
-								src="public/images/artur_profilepic.jpg"
+								src="public/images/Profilepic.jpg"
 								alt="profile,pic"
 								id="propic"
 							/>

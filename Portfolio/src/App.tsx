@@ -12,8 +12,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'
 function App() {
 	return (
 		<div>
-			<Heading />
 			<Nav />
+			<Heading />
 			<AboutMe />
 			<Skills />
 		</div>
