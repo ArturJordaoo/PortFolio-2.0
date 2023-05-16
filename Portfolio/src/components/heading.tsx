@@ -14,7 +14,8 @@ export function Heading() {
 						<div id="heading" className="col">
 							<h1 id="intro">
 								Olá, sou <br /> <span className="nome">Artur Jordão</span>{' '}
-								Desenvolvedor Full-Stack
+								<br />
+								Web Developer
 							</h1>
 							<div className="wrapper">
 								<a
@@ -52,6 +53,10 @@ export function Heading() {
 								</a>
 								
 							</div>
+							<div className='curriculo'><button className='btn btn-light'>
+							<FontAwesomeIcon className='icon-container' icon= {faFile}/>
+								<span> CV DOWNLOAD  </span>
+								</button></div>
 							
 						</div>
 					</Col>
@@ -63,10 +68,7 @@ export function Heading() {
 								id="propic"
 							/>
 						</div>
-						<button className='btn btn-light'>
-							<FontAwesomeIcon className='icon-container' icon= {faFile}/>
-								<span>teste</span>
-								</button>
+						
 					</Col>
 				</Row>
 			</Container>

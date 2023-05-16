@@ -4,7 +4,7 @@ export function Nav() {
 	return (
 		<nav className="navbar navbar-dark bg-dark">
 			<a className="navbar-brand" href="#">
-				Navbar
+				HOME
 			</a>
 			<button
 				className="navbar-toggler"

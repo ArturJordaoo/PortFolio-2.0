@@ -1,68 +1,65 @@
 .heading {
-	padding: 10vh 20vw;
+	padding: 12vh 20vw;
 	background-color: #b9cbe4;
 }
 /* parte de apresentação */
 
 #intro {
-	text-align: left;
+	text-align: justify;
 	padding-top: 4rem;
 	font-size: 3rem;
-  justify-items: center;
-
+	justify-items: center;
 }
-.nome{
-  background: -webkit-linear-gradient(right, #333, #7a7878, #333,#7a7878);
-  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.nome {
+	background: -webkit-linear-gradient(right, #333, #7a7878, #333, #7a7878);
 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
-  #propic {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-    border-radius: 5%;
-  }
-
+#propic {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+	border-radius: 5%;
+}
 
 /* Buttons */
 .icon {
-  position: relative; /* Add this */
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 1rem;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  font-size: 2.2rem;
-  display: inline-block;
-  align-items: center;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: #333;
-  text-decoration: none;
+	position: relative; /* Add this */
+	background-color: #ffffff;
+	border-radius: 50%;
+	margin: 2rem;
+	margin-top: 10rem;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 2.2rem;
+	display: inline-block;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	color: #333;
+	text-decoration: none;
 }
 
 .tooltip {
-  position: absolute;
-  top: 110%;
-  left: 50%; /* Position the tooltip below the icon and center it horizontally */
-  transform: translateX(-50%);
-  line-height: 1.5;
-  font-size: 1.4rem;
-  background-color: #ffffff;
-  color: #ffffff;
-  padding: 0.5rem 0.8rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	position: absolute;
+	top: 110%;
+	left: 50%; /* Position the tooltip below the icon and center it horizontally */
+	transform: translateX(-50%);
+	line-height: 1.5;
+	font-size: 1.4rem;
+	background-color: #ffffff;
+	color: #ffffff;
+	padding: 0.5rem 0.8rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .tooltip::before {
@@ -87,7 +84,7 @@
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-	background-color: #0e76a8		;
+	background-color: #0e76a8;
 	color: #ffffff;
 }
 
@@ -100,15 +97,13 @@
 .wrapper .whatsapp:hover,
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-	background-color: #333333;
+	background-color: #25D366;
 	color: #ffffff;
 }
-.curriculo{
-  
-}
-span{
 
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.wrapper{
+  padding-right: 5rem;
+}
+.curriculo{
+  padding-right: 5rem;
 }
