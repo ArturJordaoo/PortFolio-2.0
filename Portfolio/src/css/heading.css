@@ -1,17 +1,23 @@
+.circle-container {
+	margin: 0 auto;
+	text-align: center;
+}
+.project {
+	background: -webkit-linear-gradient(right, #333, #9400d3);
+}
 .heading {
+	color: aliceblue;
 	padding: 12vh 20vw;
-	background-color: #b9cbe4;
 }
 /* parte de apresentação */
 
 #intro {
-	text-align: justify;
+	text-align: left;
 	padding-top: 4rem;
 	font-size: 3rem;
-	justify-items: center;
 }
 .nome {
-	background: -webkit-linear-gradient(right, #333, #7a7878, #333, #7a7878);
+	background: -webkit-linear-gradient(left, #00FF00 	,#FFD700 90%);
 
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -19,9 +25,6 @@
 #propic {
 	max-width: 100%;
 	margin: 0 auto;
-	display: flex;
-	text-align: center;
-	align-items: center;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 	border-radius: 5%;
 }
@@ -31,8 +34,7 @@
 	position: relative; /* Add this */
 	background-color: #ffffff;
 	border-radius: 50%;
-	margin: 2rem;
-	margin-top: 10rem;
+	margin: 12rem 2rem 12rem 2rem;
 	width: 4rem;
 	height: 4rem;
 	line-height: 4rem;
@@ -43,6 +45,7 @@
 	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	color: #333;
 	text-decoration: none;
+	align-self: center;
 }
 
 .tooltip {
@@ -50,7 +53,7 @@
 	top: 110%;
 	left: 50%; /* Position the tooltip below the icon and center it horizontally */
 	transform: translateX(-50%);
-	line-height: 1.5;
+
 	font-size: 1.4rem;
 	background-color: #ffffff;
 	color: #ffffff;
@@ -97,13 +100,69 @@
 .wrapper .whatsapp:hover,
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-	background-color: #25D366;
+	background-color: #25d366;
 	color: #ffffff;
 }
 
-.wrapper{
-  padding-right: 5rem;
+.wrapper {
+	padding-right: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
-.curriculo{
-  padding-right: 5rem;
+.curriculo {
+	padding-right: 5rem;
+}
+.icon-container {
+	position: inherit;
+}
+@media (max-width: 768px) {
+	/* Adjust the styles for smaller screens */
+	.heading {
+		padding: 6vh 8vw;
+	}
+
+	#intro {
+		font-size: 1.5rem;
+	}
+
+	.icon {
+		margin: 2rem 1rem;
+	}
+
+	.wrapper {
+		padding-right: 2rem;
+	}
+
+	.curriculo {
+		padding-right: 2rem;
+	}
+}
+
+@media (max-width: 576px) {
+	/* Adjust the styles for even smaller screens */
+	#intro {
+		font-size: 1rem;
+	}
+
+	.icon {
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 1.8rem;
+		margin: 1rem 0.5rem;
+	}
+
+	.tooltip {
+		font-size: 1.2rem;
+	}
+
+	.wrapper {
+		padding-right: 1rem;
+	}
+
+	.curriculo {
+		padding-right: 1rem;
+	}
 }

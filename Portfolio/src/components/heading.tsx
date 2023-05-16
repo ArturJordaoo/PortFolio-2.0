@@ -9,10 +9,10 @@ export function Heading() {
 	return (
 		<div className="heading">
 			<Container fluid className="text-center">
-				<Row className="justify-content-center">
-					<Col md={6}>
+				<Row className="">
+					<Col >
 						<div id="heading" className="col">
-							<h1 id="intro">
+							<h1 id="intro"	>
 								Olá, sou <br /> <span className="nome">Artur Jordão</span>{' '}
 								<br />
 								Web Developer
@@ -27,7 +27,7 @@ export function Heading() {
 								>
 									<div className="tooltip">LinkedIn</div>
 									<FontAwesomeIcon
-										className="icon-container"
+										className="icon-container"	
 										icon={faLinkedin}
 									/>
 								</a>
@@ -60,8 +60,8 @@ export function Heading() {
 							
 						</div>
 					</Col>
-					<Col md={5} className="text-center">
-						<div className="circle-container">
+					<Col>
+						<div>
 							<img
 								src="public/images/Profilepic.jpg"
 								alt="profile,pic"
