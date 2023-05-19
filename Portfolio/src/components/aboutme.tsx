@@ -1,5 +1,5 @@
 export function AboutMe(){
   return(
-    <h2 className="about-me">About Me</h2>
+    <h2 id='sobre'>About Me</h2>
   )  
 }

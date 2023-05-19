@@ -7,22 +7,26 @@
 }
 .heading {
 	color: aliceblue;
-	padding: 12vh 20vw;
+	padding: 20vh 20vw;
 }
 /* parte de apresentação */
 
 #intro {
 	text-align: left;
-	padding-top: 4rem;
+	padding-top: 2rem;
 	font-size: 3rem;
 }
 .nome {
-	background: -webkit-linear-gradient(left, #00FF00 	,#FFD700 90%);
+	background: -webkit-linear-gradient(left, #00ff00, #ffd700 90%);
 
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.profile{
+	min-width: 17rem;
+}
 #propic {
+	min-width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
@@ -34,11 +38,11 @@
 	position: relative; /* Add this */
 	background-color: #ffffff;
 	border-radius: 50%;
-	margin: 12rem 2rem 12rem 2rem;
-	width: 4rem;
-	height: 4rem;
-	line-height: 4rem;
-	font-size: 2.2rem;
+	margin: 6rem 1rem 6rem 1rem;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 2rem;
 	display: inline-block;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 	cursor: pointer;
@@ -147,10 +151,10 @@
 	}
 
 	.icon {
-		width: 3rem;
-		height: 3rem;
-		line-height: 3rem;
-		font-size: 1.8rem;
+		width: 2rem;
+		height: 2rem;
+		line-height: 2rem;
+		font-size: 1.5rem;
 		margin: 1rem 0.5rem;
 	}
 

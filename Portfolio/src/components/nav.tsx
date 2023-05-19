@@ -1,69 +1,48 @@
-import { ReactNode } from 'react';
-import {
-  Box,
-  Flex,
-  HStack,
-  Link,
-  IconButton,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-} from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import '../css/nav.css'
 
-const Links = ['Sobre', 'Projetos', 'Skills'];
+export function Nav(){
+	const [click, setClick] = useState(false)
+	const handleClick = () => setClick(!click)
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'/'}>
-    {children}
-  </Link>
-);
+	const closeMenu = () => setClick(false)
 
-export function Nav() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  return (
-    <>
-      
-        <Flex h={16} alignItems={'center'} justifyContent={'spacebetween'}>
-          <IconButton
-            size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={'Open Menu'}
-            display={{ md: 'none' }}
-            onClick={isOpen ? onClose : onOpen}
-          />
-          <HStack spacing={8} alignItems={'center'}>
-            
-            <HStack
-              as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </HStack>
-          </HStack>
-        </Flex>
-
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
-      
-    </>
-  );
+	return (
+		<div className="header">
+			<nav className="navbar">
+				<div className="hamburger" onClick={handleClick}>
+					{click ? (
+						<FaTimes size={30} style={{ color: '#ffffff' }} />
+					) : (
+						<FaBars size={30} style={{ color: '#ffffff' }} />
+					)}
+				</div>
+				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
+					<li className="nav-item">
+						<a href="/" onClick={closeMenu}>
+							Home
+						</a>
+					</li>
+					<li className="nav-item">
+						<a href="#sobre" onClick={closeMenu}>
+							Sobre
+						</a>
+					</li>
+					<li className="nav-item">
+						<a href="/" onClick={closeMenu}>
+							Home
+						</a>
+					</li>
+					<li className="nav-item">
+						<a href="#skills" onClick={closeMenu}>
+							Skills
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	)
 }
+
+

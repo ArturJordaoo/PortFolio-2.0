@@ -7,6 +7,7 @@ import '../css/heading.css'
 
 export function Heading() {
 	return (
+		<div id='head'>
 		<div className="heading">
 			<Container fluid className="text-center">
 				<Row className="">
@@ -60,7 +61,7 @@ export function Heading() {
 							
 						</div>
 					</Col>
-					<Col>
+					<Col className='profile'>
 						<div>
 							<img
 								src="public/images/Profilepic.jpg"
@@ -72,6 +73,7 @@ export function Heading() {
 					</Col>
 				</Row>
 			</Container>
+		</div>
 		</div>
 	)
 }
