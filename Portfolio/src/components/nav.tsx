@@ -21,7 +21,7 @@ export function Nav(){
 				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 					<li className="nav-item">
 						<a href="/" onClick={closeMenu}>
-							Home
+							home
 						</a>
 					</li>
 					<li className="nav-item">
