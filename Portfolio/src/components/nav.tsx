@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import '../css/nav.css'
 
@@ -20,24 +21,24 @@ export function Nav(){
 				</div>
 				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 					<li className="nav-item">
-						<a href="/" onClick={closeMenu}>
-							home
-						</a>
-					</li>
-					<li className="nav-item">
-						<a href="#sobre" onClick={closeMenu}>
-							Sobre
-						</a>
-					</li>
-					<li className="nav-item">
-						<a href="/" onClick={closeMenu}>
+					<Link activeClass="active" to="head" spy={true}  smooth={true} offset={-200} duration={500}onClick={closeMenu}>
 							Home
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a href="#skills" onClick={closeMenu}>
+						<Link activeClass="active" to="sobre" spy={true} smooth={true} offset={-100} duration={500}onClick={closeMenu}>
+							Sobre
+						</Link>
+					</li>
+					<li className="nav-item">
+					<Link to="skills" spy={true} smooth={true} offset={-100} duration={500}onClick={closeMenu}>
 							Skills
-						</a>
+						</Link>
+					</li>
+					<li className="nav-item">
+					<Link to="x" spy={true} smooth={true} offset={-100} duration={500}onClick={closeMenu}>
+							Projetos
+						</Link>
 					</li>
 				</ul>
 			</nav>

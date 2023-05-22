@@ -1,10 +1,3 @@
-.circle-container {
-	margin: 0 auto;
-	text-align: center;
-}
-.project {
-	background: -webkit-linear-gradient(right, #333, #9400d3);
-}
 .heading {
 	color: aliceblue;
 	padding: 20vh 20vw;
@@ -12,6 +5,7 @@
 /* parte de apresentação */
 
 #intro {
+	max-height: fit-content;
 	text-align: left;
 	padding-top: 2rem;
 	font-size: 3rem;
@@ -22,12 +16,11 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.profile{
+.profile {
 	min-width: 17rem;
 }
 #propic {
-	min-width: 100%;
-	max-width: 100%;
+	height: 50%;
 	margin: 0 auto;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 	border-radius: 5%;

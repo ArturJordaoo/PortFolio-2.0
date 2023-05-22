@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  height: 80px;
+  height: 5rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -14,16 +14,20 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 1240px;
+  width: clamp(100px, calc(30% / 2rem + 10px), 900px);
   margin: auto;
   height: 100%;
   padding: 0 1rem;
 }
 
-.header .nav-menu a {
-  color: #ffffff;
+.header .nav-menu a{
+  color: aliceblue;
+  
 }
-
+.header .nav-menu a.active {
+  padding-bottom: 12px;
+  border-bottom: 3px solid rgb(62, 168, 255);
+} 
 .header .navbar img {
   width: 250px;
   height: auto;
@@ -34,13 +38,19 @@
 }
 
 .header .nav-item {
-  padding: 1rem;
+  padding: 1.5rem;
   font-weight: 500;
+}
+
+.nav-item active{
+  padding-bottom: 12px;
+  border-bottom: 3px solid rgb(62, 168, 255);
+  
 }
 
 .header .nav-item a:hover {
   padding-bottom: 12px;
-  border-bottom: 3px solid var(--secondary-color);
+  border-bottom: 3px solid rgb(62, 168, 255);
 }
 
 .hamburger {
@@ -65,7 +75,7 @@
   .nav-menu {
       position: fixed;
       left: -100%;
-      top: 90px;
+      top: 80px;
       flex-direction: column;
       background-color: rgba(0,0,0,.9);
       width: 100%;

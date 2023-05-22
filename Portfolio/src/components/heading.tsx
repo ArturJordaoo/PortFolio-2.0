@@ -3,6 +3,7 @@ import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Col, Container, Row } from 'react-bootstrap'
 import '../css/heading.css'
+import head from '../assets/head.svg'
 
 
 export function Heading() {
@@ -11,7 +12,7 @@ export function Heading() {
 		<div className="heading">
 			<Container fluid className="text-center">
 				<Row className="">
-					<Col >
+					<Col md={7}>
 						<div id="heading" className="col">
 							<h1 id="intro"	>
 								Olá, sou <br /> <span className="nome">Artur Jordão</span>{' '}
@@ -61,12 +62,12 @@ export function Heading() {
 							
 						</div>
 					</Col>
-					<Col className='profile'>
-						<div>
+						<Col md={5} className='profile'>
+						<div className='propic'>
 							<img
-								src="public/images/Profilepic.jpg"
+								src={head}
 								alt="profile,pic"
-								id="propic"
+								
 							/>
 						</div>
 						
