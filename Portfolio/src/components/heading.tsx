@@ -11,9 +11,9 @@ export function Heading() {
 		<div id='head'>
 		<div className="heading">
 			<Container fluid className="text-center">
-				<Row className="">
-					<Col md={7}>
-						<div id="heading" className="col">
+				<Row className="d-flex align-items-center">
+					<Col md={6}>
+						<div id="heading">
 							<h1 id="intro"	>
 								Olá, sou <br /> <span className="nome">Artur Jordão</span>{' '}
 								<br />
@@ -62,7 +62,7 @@ export function Heading() {
 							
 						</div>
 					</Col>
-						<Col md={5} className='profile'>
+						<Col md={6} className='profile' >
 						<div className='propic'>
 							<img
 								src={head}

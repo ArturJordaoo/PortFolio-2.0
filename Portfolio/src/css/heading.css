@@ -9,6 +9,7 @@
 	text-align: left;
 	padding-top: 2rem;
 	font-size: 3rem;
+	white-space: nowrap;
 }
 .nome {
 	background: -webkit-linear-gradient(left, #00ff00, #ffd700 90%);
@@ -113,53 +114,4 @@
 }
 .icon-container {
 	position: inherit;
-}
-@media (max-width: 768px) {
-	/* Adjust the styles for smaller screens */
-	.heading {
-		padding: 6vh 8vw;
-	}
-
-	#intro {
-		font-size: 1.5rem;
-	}
-
-	.icon {
-		margin: 2rem 1rem;
-	}
-
-	.wrapper {
-		padding-right: 2rem;
-	}
-
-	.curriculo {
-		padding-right: 2rem;
-	}
-}
-
-@media (max-width: 576px) {
-	/* Adjust the styles for even smaller screens */
-	#intro {
-		font-size: 1rem;
-	}
-
-	.icon {
-		width: 2rem;
-		height: 2rem;
-		line-height: 2rem;
-		font-size: 1.5rem;
-		margin: 1rem 0.5rem;
-	}
-
-	.tooltip {
-		font-size: 1.2rem;
-	}
-
-	.wrapper {
-		padding-right: 1rem;
-	}
-
-	.curriculo {
-		padding-right: 1rem;
-	}
 }
