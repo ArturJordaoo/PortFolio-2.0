@@ -11,7 +11,7 @@ export function Heading() {
 		<div id='head'>
 		<div className="heading">
 			<Container fluid className="text-center">
-				<Row className="d-flex align-items-center">
+				<Row className="d-flex align-items-center justify-content-center">
 					<Col md={6}>
 						<div id="heading">
 							<h1 id="intro"	>
