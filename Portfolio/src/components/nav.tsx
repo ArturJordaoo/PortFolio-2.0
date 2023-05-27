@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-scroll'
 import '../css/nav.css'
 
-export function Nav(){
+export function Nav() {
 	const [click, setClick] = useState(false)
 	const handleClick = () => setClick(!click)
 
@@ -21,22 +21,52 @@ export function Nav(){
 				</div>
 				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 					<li className="nav-item">
-					<Link activeClass="active" to="head" spy={true}  smooth={true} offset={-200} duration={500}onClick={closeMenu}>
+						<Link
+							activeClass="active"
+							to="head"
+							spy={true}
+							smooth={true}
+							offset={-200}
+							duration={500}
+							onClick={closeMenu}
+						>
 							Home
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link activeClass="active" to="sobre" spy={true} smooth={true} offset={-100} duration={500}onClick={closeMenu}>
+						<Link
+							activeClass="active"
+							to="sobre"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}
+							onClick={closeMenu}
+						>
 							Sobre
 						</Link>
 					</li>
 					<li className="nav-item">
-					<Link to="skills" spy={true} smooth={true} offset={-100} duration={500}onClick={closeMenu}>
+						<Link
+							to="skills"
+							spy={true}
+							smooth={true}
+							offset={-150}
+							duration={500}
+							onClick={closeMenu}
+						>
 							Skills
 						</Link>
 					</li>
 					<li className="nav-item">
-					<Link to="x" spy={true} smooth={true} offset={-100} duration={500}onClick={closeMenu}>
+						<Link
+							to="x"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}
+							onClick={closeMenu}
+						>
 							Projetos
 						</Link>
 					</li>
@@ -45,5 +75,3 @@ export function Nav(){
 		</div>
 	)
 }
-
-

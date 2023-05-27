@@ -1,0 +1,12 @@
+#aboutpic{
+  max-height: 35rem;
+  mix-blend-mode:lighten;
+}
+.abouttxt{
+  text-align: justify !important;
+
+}
+#webintro{
+  padding-bottom: 5rem;
+  
+}

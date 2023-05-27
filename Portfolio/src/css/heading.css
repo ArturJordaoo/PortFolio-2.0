@@ -17,6 +17,7 @@
 
 .nome {
   background: -webkit-linear-gradient(left, #00ff00, #ffd700 90%);
+	background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
