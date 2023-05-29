@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import '../css/nav.css'
-
 export function Nav() {
 	const [click, setClick] = useState(false)
 	const handleClick = () => setClick(!click)
@@ -12,6 +11,7 @@ export function Nav() {
 	return (
 		<div className="header">
 			<nav className="navbar">
+
 				<div className="hamburger" onClick={handleClick}>
 					{click ? (
 						<FaTimes size={30} style={{ color: '#ffffff' }} />
@@ -68,6 +68,18 @@ export function Nav() {
 							onClick={closeMenu}
 						>
 							Projetos
+						</Link>
+					</li>
+					<li className="nav-item">
+						<Link
+							to="x"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}
+							onClick={closeMenu}
+						>
+						Contato
 						</Link>
 					</li>
 				</ul>
