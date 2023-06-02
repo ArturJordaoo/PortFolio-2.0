@@ -48,6 +48,7 @@ export function Nav() {
 					</li>
 					<li className="nav-item">
 						<Link
+						activeClass="active"
 							to="skills"
 							spy={true}
 							smooth={true}
@@ -60,7 +61,8 @@ export function Nav() {
 					</li>
 					<li className="nav-item">
 						<Link
-							to="x"
+						activeClass="active"
+							to="Project"
 							spy={true}
 							smooth={true}
 							offset={-100}
