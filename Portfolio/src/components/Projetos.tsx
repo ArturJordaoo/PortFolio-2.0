@@ -1,4 +1,4 @@
-import React from 'react';
+import'../css/project.css'
 
 interface ProjetosProps {
   habilidades: string[];
@@ -36,8 +36,8 @@ export function Projetos({ habilidades }: ProjetosProps) {
     : projetos;
 
   return (
-    <div >
-      <h2 id='Project'>Projetos</h2>
+    <div id='project'>
+      <h2 >Projetos</h2>
       {projetosFiltrados.map(projeto => (
         <div key={projeto.nome}>
           <h3>{projeto.nome}</h3>

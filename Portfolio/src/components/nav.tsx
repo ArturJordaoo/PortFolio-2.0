@@ -34,17 +34,17 @@ export function Nav() {
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link
-							activeClass="active"
-							to="sobre"
-							spy={true}
-							smooth={true}
-							offset={-100}
-							duration={500}
-							onClick={closeMenu}
-						>
-							Sobre
-						</Link>
+							<Link
+								activeClass="active"
+								to="sobre"
+								spy={true}
+								smooth={true}
+								offset={-300}
+								duration={500}
+								onClick={closeMenu}
+							>
+								Sobre
+							</Link>
 					</li>
 					<li className="nav-item">
 						<Link
@@ -52,7 +52,7 @@ export function Nav() {
 							to="skills"
 							spy={true}
 							smooth={true}
-							offset={-150}
+							offset={-180}
 							duration={500}
 							onClick={closeMenu}
 						>

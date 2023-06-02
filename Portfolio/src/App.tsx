@@ -3,6 +3,7 @@ import ComponentePai from './components/filtred'
 import { Heading } from './components/heading'
 import { Nav } from './components/nav'
 
+
 import { ChakraProvider } from '@chakra-ui/react'
 // Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
