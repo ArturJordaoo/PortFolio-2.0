@@ -62,10 +62,10 @@ export function Nav() {
 					<li className="nav-item">
 						<Link
 						activeClass="active"
-							to="Project"
+							to="project"
 							spy={true}
 							smooth={true}
-							offset={-100}
+							offset={100}
 							duration={500}
 							onClick={closeMenu}
 						>

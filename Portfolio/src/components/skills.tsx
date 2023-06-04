@@ -1,4 +1,3 @@
-import { faReact, faNode, faGit, faHtml5, faCss3, faJavascript } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../css/skills.css'
 
@@ -15,50 +14,75 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 				apenas clicar em uma delas que elas filtram os projetos em que são
 				aplicadas
 			</p>
-      <h3>Front-end skills</h3>
+			<h3>Front-end skills</h3>
 			<button
+				className="skills-img"
 				type="button"
 				onClick={() => onSelectHabilidade('React')}
-				className="btn btn-light "
 			>
-				<FontAwesomeIcon icon={faReact} /><br />
-        <span className="">teste</span>
+				<img
+					className="sk-img"
+					src="../../public/images/physics.png"
+					alt="program"
+				/>
+				<br />
+				<span className="">React</span>
 			</button>
 			<button
+				className="skills-img"
 				type="button"
-				onClick={() => onSelectHabilidade('React')}
-				className="btn btn-light "
+				onClick={() => onSelectHabilidade('CSS	')}
 			>
-				<FontAwesomeIcon icon={faCss3} />
-        <br />
-        CSS
+				<img
+					className="sk-img"
+					src="../../public/images/css-3.png"
+					alt="program"
+				/>
+				<br />
+				CSS
 			</button>
 			<button
+				className="skills-img"
 				type="button"
 				onClick={() => onSelectHabilidade('React')}
-				className="btn btn-light "
 			>
-				<FontAwesomeIcon icon={faHtml5} /><br />
-        HTML
+				<img
+					className="sk-img"
+					src="../../public/images/js.png"
+					alt="program"
+				/>
+				<br />
+				JS
+			</button>
+			<button
+				className="skills-img"
+				type="button"
+				onClick={() => onSelectHabilidade('React')}
+			>
+				<img
+					className="sk-img"
+					src="../../public/images/html.png"
+					alt="program"
+				/>
+				<br />
+				HTML
 			</button>
 			<h3>Outras</h3>
 			<button
+				className="skills-img"
 				type="button"
 				onClick={() => onSelectHabilidade('React')}
-				className="btn btn-light "
-			>
-				<FontAwesomeIcon icon={faGit} />
-			
-			</button>
-      <h3>backend </h3>
+			><img
+			className="sk-img"
+			src="../../public/images/bootstrap.png"
+			alt="program"
+		/></button>
+			<h3>backend </h3>
 			<button
+				className="skills-img"
 				type="button"
 				onClick={() => onSelectHabilidade('Node')}
-				className="btn btn-light "
-			>
-				<FontAwesomeIcon icon={faNode} />
-				
-			</button>
+			></button>
 		</div>
 	)
 }
