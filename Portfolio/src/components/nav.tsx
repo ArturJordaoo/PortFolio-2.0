@@ -39,7 +39,7 @@ export function Nav() {
 								to="sobre"
 								spy={true}
 								smooth={true}
-								offset={-300}
+								offset={-50}
 								duration={500}
 								onClick={closeMenu}
 							>
@@ -52,7 +52,7 @@ export function Nav() {
 							to="skills"
 							spy={true}
 							smooth={true}
-							offset={-180}
+							offset={-50}
 							duration={500}
 							onClick={closeMenu}
 						>
@@ -77,7 +77,7 @@ export function Nav() {
 							to="x"
 							spy={true}
 							smooth={true}
-							offset={-100}
+							offset={-50}
 							duration={500}
 							onClick={closeMenu}
 						>

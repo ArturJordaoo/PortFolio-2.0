@@ -11,9 +11,9 @@ import '../css/heading.css'
 
 export function Heading() {
 	return (
-		<div id="head">
+		<div >
 			<div className="heading">
-				<Container fluid className="text-center">
+				<Container fluid className="text-center" id="head">
 					<Row className="d-flex align-items-center justify-content-center">
 						<Col xs={12} sm={12} md={6}>
 							<div id="heading">
@@ -66,7 +66,7 @@ export function Heading() {
 								<div className="curriculo">
 									<button className="btn btn-light">
 										<FontAwesomeIcon className="icon-container" icon={faFile} />
-										<span> CV DOWNLOAD </span>
+										<span> CURRÍCULO </span>
 									</button>
 								</div>
 							</div>
