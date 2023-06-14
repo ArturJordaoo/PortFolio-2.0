@@ -1,5 +1,3 @@
-/* heading.css */
-
 .heading {
   color: aliceblue;
   padding: 20vh 20vw;
@@ -8,7 +6,6 @@
   align-items: center !important;
 }
 
-
 #intro {
   text-align: left;
   padding-top: 2rem;
@@ -16,8 +13,8 @@
 }
 
 .nome {
-  background: -webkit-linear-gradient(left, #00ff00, #ffd700 90%);
-	background-clip: inherit;
+  background: linear-gradient(to right, #3498db, #7b8dc7 90%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

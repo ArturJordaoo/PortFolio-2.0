@@ -1,24 +1,18 @@
-import React, { useState } from 'react';
-import { Projetos } from './Projetos';
+import { useState } from 'react';
 import { Skills } from './skills';
+import { Projetos } from './Projetos';
 
-function ComponentePai() {
-  const [habilidadesSelecionadas, setHabilidadesSelecionadas] = useState<string[]>([]);
+export function Filtred() {
+  const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
 
-  const handleSelectHabilidade = (habilidade: string) => {
-    if (habilidadesSelecionadas.includes(habilidade)) {
-      setHabilidadesSelecionadas(habilidadesSelecionadas.filter(h => h !== habilidade));
-    } else {
-      setHabilidadesSelecionadas([...habilidadesSelecionadas, habilidade]);
-    }
+  const handleSelectHabilidade = (habilidades: string[]) => {
+    setSelectedSkills(habilidades);
   };
 
   return (
     <div>
       <Skills onSelectHabilidade={handleSelectHabilidade} />
-      <Projetos habilidades={habilidadesSelecionadas} />
+      <Projetos habilidades={selectedSkills} />
     </div>
   );
 }
-
-export default ComponentePai;

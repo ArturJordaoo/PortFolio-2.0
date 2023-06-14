@@ -1,5 +1,5 @@
 import { AboutMe } from './components/aboutme'
-import ComponentePai from './components/filtred'
+import {Filtred} from './components/filtred'
 import { Heading } from './components/heading'
 import { Nav } from './components/nav'
 
@@ -18,7 +18,7 @@ function App() {
 				<Nav />
 				<Heading />
 				<AboutMe />
-				<ComponentePai/>
+				<Filtred/>
 			</div>
 		</ChakraProvider>
 	)
