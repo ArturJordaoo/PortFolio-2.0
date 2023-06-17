@@ -1,13 +1,13 @@
+#skills {
+  background-image: linear-gradient(to left, rgb(231, 225, 243), rgb(136, 116, 198));
+  padding: 2rem 1.5rem;
+}
 .sk-img {
   width: 30px;
   height: 30px;
   margin: 1rem;
 }
 
-#skills {
-  background-image: linear-gradient(to left, rgb(231, 225, 243), rgb(136, 116, 198));
-  padding: 2rem 1.5rem;
-}
 
 .skills-img {
   position: relative;

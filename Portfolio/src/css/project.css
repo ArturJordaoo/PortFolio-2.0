@@ -1,3 +1,9 @@
 #project{
   padding: 2rem 1.5rem;
 }
+.sk-img {
+  width: 30px;
+  height: 30px;
+  margin: 1rem;
+  display: inline-block;
+}
