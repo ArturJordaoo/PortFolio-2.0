@@ -2,9 +2,6 @@
   padding: 2rem 1.5rem;
   background-image: linear-gradient(to left, rgb(231, 225, 243), rgb(136, 116, 198));
 }
-.sk-img {
-  width: 30px;
-  height: 30px;
-  margin: 1rem;
-  display: inline-block;
+.imagensProjeto{
+  padding: 100px;
 }
