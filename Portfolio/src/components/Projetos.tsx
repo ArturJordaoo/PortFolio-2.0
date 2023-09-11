@@ -8,7 +8,6 @@ import {
 	Wrap,
 	WrapItem,
 } from '@chakra-ui/react'
-import React from 'react'
 
 interface ProjetoProps {
 	nome: string
@@ -27,7 +26,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 	const projetos: ProjetoProps[] = [
 		{
 			nome: 'CRUD',
-			habilidades: ['HTML', 'CSS'],
+			habilidades: ['React', 'Node', 'Postgre'],
 			descricao: 'Um projeto usando HTML e CSS',
 			imagem: 'CRUDIMG',
 			link: 'https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY0MDABLTBlYTYtOWU2OC0wMAItMDAKABAAulonNU122kKHdsJlc5a1iA%3D%3D/sxs/AQMkADAwATY0MDABLTBlYTYtOWU2OC0wMAItMDAKAEYAAAM1fjP5TP9bT4rJYAuSQX3zBwBS5vr8S7zaT4ttPGxsAJNmawAAAgEJAAAAUub6%2FEu82k%2BLbTxsbACTZmsAAADhsj6jAAAAARIAEADNYq2v6QMsSowPp2awnieA?actSwt=true',
@@ -53,6 +52,9 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		HTML: '../../public/images/html.png',
 		CSS: '../../public/images/css-3.png',
 		JS: '../../public/images/js.png',
+		Node: '../../public/images/nodejs.png',
+		React: '../../public/images/physics.png',
+		Postgre: '../../public/images/postgre.png',
 	}
 
 	const projetosImagens: Record<string, string> = {
@@ -67,25 +69,25 @@ export function Projetos({ habilidades }: ProjetosProps) {
 				habilidades.some((habilidade) =>
 					projeto.habilidades.includes(habilidade),
 				),
-			)
+		  )
 		: projetos
 
 	return (
 		<Box
 			id="project"
-			py="2rem"
-			px="1.5rem"
+			py="4rem"
+			px="3rem"
 			bgGradient="linear(to left, rgb(231, 225, 243), rgb(136, 116, 198))"
 		>
 			<Heading as="h2" size="xl" mb="2rem">
 				Projetos
 			</Heading>
-			<Grid templateColumns="repeat(auto-fill, minmax(250px, 1fr))" gap="1rem">
+			<Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap="1rem">
 				{projetosFiltrados.map((projeto) => (
 					<Box
 						key={projeto.nome}
-						p="1rem"
-						borderWidth="1px"
+						p="2.5rem"
+						borderWidth="2px"
 						borderRadius="lg"
 						shadow="md"
 					>
@@ -97,7 +99,6 @@ export function Projetos({ habilidades }: ProjetosProps) {
 							alt={projeto.nome}
 							className="imagensProjeto"
 							p="1rem"
-							
 						/>
 						<Button
 							as="a"

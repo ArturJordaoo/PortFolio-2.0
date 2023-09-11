@@ -58,10 +58,11 @@ export function Heading() {
                   </a>
                 </div>
                 <div className="curriculo">
-                  <button className="btn btn-light">
+                  <a className="btn btn-light"
+                  href='../assets/CurriculoArtur(maio).pdf'>
                     <FontAwesomeIcon className="icon-container" icon={faFile} />
                     <span> CURRÍCULO </span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </Col>

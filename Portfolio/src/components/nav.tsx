@@ -65,7 +65,7 @@ export function Nav() {
               to="project"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={-30}
               duration={500}
               onClick={closeMenu}
             >

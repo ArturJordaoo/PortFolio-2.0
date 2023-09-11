@@ -115,7 +115,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
           onClick={() => handleSkillClick('Node')}
         >
           {isSkillSelected('Node') && <FontAwesomeIcon icon={faCheck} className="check-icon" />}
-          <img src="../../public/images/nodejs.png" alt="" className="sk-img bg-light rounded" />
+          <img src="../../public/images/nodejs.png" alt="Node" className="sk-img bg-light rounded" />
           <span>Node</span>
         </button>
         <button
