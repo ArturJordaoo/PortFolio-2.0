@@ -1,13 +1,14 @@
 import {
 	faGithub,
 	faLinkedin,
-	faWhatsapp,
+	faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Col, Container, Row } from 'react-bootstrap'
 import head from '../assets/head.svg'
 import '../css/heading.css'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 export function Heading() {
 	return (
@@ -34,7 +35,7 @@ export function Heading() {
 										<div className="tooltip">LinkedIn</div>
 										<FontAwesomeIcon
 											className="icon-container"
-											icon={faLinkedin}
+											icon={faLinkedin as IconProp}
 										/>
 									</a>
 									<a
@@ -48,7 +49,7 @@ export function Heading() {
 										<div className="tooltip">GitHub</div>
 										<FontAwesomeIcon
 											className="icon-container"
-											icon={faGithub}
+											icon={faGithub as IconProp}
 										/>
 									</a>
 									<a
@@ -62,7 +63,7 @@ export function Heading() {
 										<div className="tooltip">WhatsApp</div>
 										<FontAwesomeIcon
 											className="icon-container"
-											icon={faWhatsapp}
+											icon={faWhatsapp as IconProp}
 										/>
 									</a>
 								</div>
@@ -71,7 +72,7 @@ export function Heading() {
 										className="btn btn-light"
 										href="../assets/CurriculoArtur(maio).pdf"
 									>
-										<FontAwesomeIcon className="icon-container" icon={faFile} />
+										<FontAwesomeIcon className="icon-container" icon={faFile as IconProp} />
 										<span> CURRÍCULO </span>
 									</a>
 								</div>
