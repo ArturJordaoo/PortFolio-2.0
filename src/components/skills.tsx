@@ -7,7 +7,15 @@ interface SkillsProps {
 	onSelectHabilidade: (habilidades: string[]) => void
 }
 
+import IconCss from '../../public/images/css-3.png'
 import IconGit from '../../public/images/git.png'
+import IconHtml from '../../public/images/html.png'
+import IconJs from '../../public/images/js.png'
+import IconNode from '../../public/images/nodejs.png'
+import IconReact from '../../public/images/physics.png'
+import IconPython from '../../public/images/python.png'
+import IconPostgre from '../../public/images/postgre.png'
+import IconBootstrap from '../../public/images/bootstrap.png'
 
 export function Skills({ onSelectHabilidade }: SkillsProps) {
 	const [selectedSkills, setSelectedSkills] = useState<string[]>([])
@@ -50,11 +58,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						className="sk-img"
-						src="../../public/images/physics.png"
-						alt="program"
-					/>
+					<img className="sk-img" src={IconReact} alt="program" />
 					<span className="">React</span>
 				</button>
 				<button
@@ -68,11 +72,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						className="sk-img"
-						src="../../public/images/css-3.png"
-						alt="program"
-					/>
+					<img className="sk-img" src={IconCss} alt="program" />
 					<span>CSS</span>
 				</button>
 				<button
@@ -86,11 +86,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						className="sk-img"
-						src="../../public/images/js.png"
-						alt="program"
-					/>
+					<img className="sk-img" src={IconJs} alt="program" />
 					<span>JS</span>
 				</button>
 				<button
@@ -106,7 +102,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 					)}
 					<img
 						className="sk-img"
-						src="../../public/images/html.png"
+						src={IconHtml}
 						alt="program"
 					/>
 					<span>HTML</span>
@@ -144,7 +140,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 						/>
 					)}
 					<img
-						src="../../public/images/postgre.png"
+						src={IconPostgre}
 						alt=""
 						className="sk-img"
 					/>
@@ -165,7 +161,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 					)}
 					<img
 						className="sk-img"
-						src="../../public/images/bootstrap.png"
+						src={IconBootstrap}
 						alt="program"
 					/>
 					<span>Bootstrap</span>
@@ -187,7 +183,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 						/>
 					)}
 					<img
-						src="../../public/images/nodejs.png"
+						src={IconNode}
 						alt="Node"
 						className="sk-img bg-light rounded"
 					/>
@@ -206,7 +202,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img src="../../public/images/python.png" alt="" className="sk-img" />
+            <img src={IconPython} alt="" className="sk-img" />
 					<span>Python</span>
 				</button>
 				{/* Add other backend skills buttons here */}
