@@ -8,8 +8,8 @@ import {
 	Wrap,
 	WrapItem,
 } from '@chakra-ui/react'
-import IconCrud from '../../public/images/Crud_project.png'
-import IconTodo from '../../public/images/Todoimg.png'
+/* import IconCrud from '../../public/images/Crud_project.png'
+import IconTodo from '../../public/images/Todoimg.png' */
 interface ProjetoProps {
 	nome: string
 	habilidades: string[]
