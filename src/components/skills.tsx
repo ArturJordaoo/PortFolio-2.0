@@ -7,6 +7,8 @@ interface SkillsProps {
 	onSelectHabilidade: (habilidades: string[]) => void
 }
 
+import IconGit from '../../public/images/git.png'
+
 export function Skills({ onSelectHabilidade }: SkillsProps) {
 	const [selectedSkills, setSelectedSkills] = useState<string[]>([])
 
@@ -125,7 +127,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img src="../../public/images/git.png" alt="" className="sk-img" />
+					<img src={IconGit} alt="" className="sk-img" />
 					<span>Git</span>
 				</button>
 				<button
