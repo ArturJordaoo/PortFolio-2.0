@@ -47,18 +47,18 @@ export function Projetos({ habilidades }: ProjetosProps) {
 	]
 
 	const habilidadesImagens: Record<string, string> = {
-		HTML: '../../public/images/html.png',
-		CSS: '../../public/images/css-3.png',
-		JS: '../../public/images/js.png',
-		Node: '../../public/images/nodejs.png',
-		React: '../../public/images/physics.png',
-		Postgre: '../../public/images/postgre.png',
+		HTML: '/images/html.png',
+		CSS: '/images/css-3.png',
+		JS: '/images/js.png',
+		Node: '/images/nodejs.png',
+		React: '/images/physics.png',
+		Postgre: '/images/postgre.png',
 	}
 
 	const projetosImagens: Record<string, string> = {
-		CRUDIMG: '../../public/images/Crud_project.png',
-		TODOLISTIMG: '../../public/images/Todoimg.png',
-		TESTEIMG: '../../public/images/Test_project.png',
+		CRUDIMG: '/images/Crud_project.png',
+		TODOLISTIMG: '/images/Todoimg.png',
+		TESTEIMG: '/images/Test_project.png',
 	}
 
 	const projetosFiltrados = habilidades.length
