@@ -28,7 +28,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 			habilidades: ['React', 'Node', 'Postgre'],
 			descricao: 'Um projeto usando HTML e CSS',
 			imagem: 'CRUDIMG',
-			link: 'https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY0MDABLTBlYTYtOWU2OC0wMAItMDAKABAAulonNU122kKHdsJlc5a1iA%3D%3D/sxs/AQMkADAwATY0MDABLTBlYTYtOWU2OC0wMAItMDAKAEYAAAM1fjP5TP9bT4rJYAuSQX3zBwBS5vr8S7zaT4ttPGxsAJNmawAAAgEJAAAAUub6%2FEu82k%2BLbTxsbACTZmsAAADhsj6jAAAAARIAEADNYq2v6QMsSowPp2awnieA?actSwt=true',
+			link: '',
 		},
 		{
 			nome: 'TO DO LIST',
