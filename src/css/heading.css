@@ -1,6 +1,6 @@
 .heading {
 	color: aliceblue;
-	padding: 20vh 20vw;
+	padding: 5vh 20vw;
 	text-align: center !important;
 	display: flex !important;
 	align-items: center !important;
@@ -112,19 +112,19 @@
 	justify-content: center;
 	align-items: center;
 }
-.curriculo{
-  padding-right:5rem;
+.curriculo {
+	padding-right: 5rem;
 }
 .curriculo .icon-container {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 0.5rem;
 }
-.curriculo .icon{
-  min-width: 8rem;
+.curriculo .icon {
+	min-width: 8rem;
 }
 .curriculo .text {
-  padding-top: 5px;
+	padding-top: 5px;
 	display: inline-block;
 	vertical-align: middle;
 }
