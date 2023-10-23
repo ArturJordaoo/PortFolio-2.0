@@ -1,14 +1,14 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import {
 	faGithub,
 	faLinkedin,
-	faWhatsapp
+	faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Col, Container, Row } from 'react-bootstrap'
 import head from '../assets/head.svg'
 import '../css/heading.css'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 export function Heading() {
 	return (
@@ -69,11 +69,18 @@ export function Heading() {
 								</div>
 								<div className="curriculo">
 									<a
-										className="btn btn-light"
+										className="btn btn-light icon"
 										href="../assets/CurriculoArtur(maio).pdf"
+										role="button"
+										id="curriculoBtn"
+										target="_blank"
+										rel="noopener noreferrer"
 									>
-										<FontAwesomeIcon className="icon-container" icon={faFile as IconProp} />
-										<span> CURRÍCULO </span>
+										<div className="icon-container">
+											<FontAwesomeIcon icon={faFile as IconProp} />
+										</div>
+										<span className="text">Currículo</span>
+										<div className="tooltip">Download</div>
 									</a>
 								</div>
 							</div>

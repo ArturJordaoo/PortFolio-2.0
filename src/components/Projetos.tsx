@@ -28,7 +28,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 			habilidades: ['React', 'Node', 'Postgre'],
 			descricao: 'Um projeto usando HTML e CSS',
 			imagem: 'CRUDIMG',
-			link: '',
+			link: 'https://github.com/ArturJordaoo/CRUD-REACT-NODE-PostgreSql',
 		},
 		{
 			nome: 'TO DO LIST',
@@ -38,11 +38,11 @@ export function Projetos({ habilidades }: ProjetosProps) {
 			link: 'https://arturjordaoo.github.io/ToDoApp/',
 		},
 		{
-			nome: 'teste',
+			nome: 'DiceRoll',
 			habilidades: ['HTML', 'CSS', 'JS'],
 			descricao: 'Um projeto usando HTML, CSS e JavaScript',
 			imagem: 'TESTEIMG',
-			link: '',
+			link: 'https://arturjordaoo.github.io/DiceRoll/',
 		},
 	]
 
