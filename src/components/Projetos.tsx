@@ -1,15 +1,14 @@
 import {
 	Box,
 	Button,
+	Image as ChakraImage,
 	Grid,
 	Heading,
-	Image,
 	Text,
 	Wrap,
 	WrapItem,
 } from '@chakra-ui/react'
-/* import IconCrud from '../../public/images/Crud_project.png'
-import IconTodo from '../../public/images/Todoimg.png' */
+
 interface ProjetoProps {
 	nome: string
 	habilidades: string[]
@@ -23,7 +22,6 @@ interface ProjetosProps {
 }
 
 export function Projetos({ habilidades }: ProjetosProps) {
-	// Lista de projetos fictícios
 	const projetos: ProjetoProps[] = [
 		{
 			nome: 'CRUD',
@@ -46,7 +44,6 @@ export function Projetos({ habilidades }: ProjetosProps) {
 			imagem: 'TESTEIMG',
 			link: '',
 		},
-		// Adicione mais projetos fictícios conforme necessário
 	]
 
 	const habilidadesImagens: Record<string, string> = {
@@ -64,7 +61,6 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		TESTEIMG: '../../public/images/Test_project.png',
 	}
 
-	// Filtrar os projetos com base nas habilidades selecionadas
 	const projetosFiltrados = habilidades.length
 		? projetos.filter((projeto) =>
 				habilidades.some((habilidade) =>
@@ -95,7 +91,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 						<Heading as="h3" size="md" mb="1rem">
 							{projeto.nome}
 						</Heading>
-						<Image
+						<ChakraImage
 							src={projetosImagens[projeto.imagem]}
 							alt={projeto.nome}
 							className="imagensProjeto"
@@ -116,7 +112,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 						<Wrap spacing="1rem" mb="1rem">
 							{projeto.habilidades.map((habilidade) => (
 								<WrapItem key={habilidade}>
-									<Image
+									<ChakraImage
 										src={habilidadesImagens[habilidade]}
 										alt={habilidade}
 										w="2rem"
