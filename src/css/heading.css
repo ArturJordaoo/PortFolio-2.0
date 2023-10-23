@@ -112,7 +112,9 @@
 	justify-content: center;
 	align-items: center;
 }
-
+.curriculo{
+  padding-right:5rem;
+}
 .curriculo .icon-container {
 	display: inline-block;
 	vertical-align: middle;
