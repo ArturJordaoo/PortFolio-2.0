@@ -26,7 +26,7 @@ export function Nav() {
 							to="heading"
 							spy={true}
 							smooth={true}
-							offset={-60}
+							offset={-70}
 							duration={500}
 							onClick={closeMenu}
 						>
@@ -39,7 +39,7 @@ export function Nav() {
 							to="sobre"
 							spy={true}
 							smooth={true}
-							offset={-50}
+							offset={-70}
 							duration={500}
 							onClick={closeMenu}
 						>
@@ -52,7 +52,7 @@ export function Nav() {
 							to="skills"
 							spy={true}
 							smooth={true}
-							offset={-95}
+							offset={-112}
 							duration={500}
 							onClick={closeMenu}
 						>
@@ -74,7 +74,7 @@ export function Nav() {
 					</li>
 					<li className="nav-item">
 						<Link
-							to="x"
+							to="contatosS"
 							spy={true}
 							smooth={true}
 							offset={-50}

@@ -2,7 +2,7 @@ import { AboutMe } from './components/aboutme'
 import {Filtred} from './components/filtred'
 import { Heading } from './components/heading'
 import { Nav } from './components/nav'
-import {Contatos} from './components/contact'
+import Contatos from './components/contact'
 
 
 import { ChakraProvider } from '@chakra-ui/react'
