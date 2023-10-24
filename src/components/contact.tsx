@@ -40,7 +40,7 @@ const Contatos: React.FC = () => {
 			message: formData.get('message') as string,
 		}
 
-		// Check for SQL injection
+		// ANTI SQL injection
 		if (
 			/[;<>,]/.test(data.name) ||
 			/[;<>,]/.test(data.email) ||
@@ -50,7 +50,6 @@ const Contatos: React.FC = () => {
 			return
 		}
 
-		// Check email format
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 		if (!emailRegex.test(data.email)) {
 			setError('Formato de e-mail inválido.')
@@ -60,7 +59,6 @@ const Contatos: React.FC = () => {
 		try {
 			setError(null)
 
-			// Send email using EmailJS
 			const response = await emailjs.sendForm(
 				SERVICE_ID,
 				TEMPLATE_ID,
@@ -70,7 +68,6 @@ const Contatos: React.FC = () => {
 
 			if (response && response.status === 200) {
 				setSubmitted(true)
-				// Limpar os campos após o envio bem-sucedido
 				form.reset()
 			} else {
 				throw new Error('Erro no formulário')

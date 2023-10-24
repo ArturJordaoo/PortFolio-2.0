@@ -1,195 +1,209 @@
+/* heading.css */
+
+/* Estilos gerais */
 .heading {
-	color: aliceblue;
-	padding: 5vh 20vw;
-	text-align: center !important;
-	display: flex !important;
-	align-items: center !important;
+  color: aliceblue;
+  padding: 20vh 20vw;
+  text-align: center !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 #intro {
-	text-align: left;
-	padding-top: 2rem;
-	font-size: clamp(2rem, 3vw, 5rem);
+  text-align: left;
+  padding-top: 2rem;
+  font-size: clamp(2rem, 3vw, 5rem);
 }
 
 .nome {
-	background: linear-gradient(to right, #3498db, #7b8dc7 90%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #3498db, #7b8dc7 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.icon-container.mobile {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Estilos do perfil e propic */
 .profile {
-	min-width: 20rem;
+  min-width: 20rem;
+  max-width: 100%;
 }
 
 #propic {
-	height: clamp(80%, 15vw, 100%);
-	margin: 0 auto;
-	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-	border-radius: 5%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
 }
 
+/* Estilos dos ícones */
 .icon {
-	position: relative;
-	background-color: #ffffff;
-	border-radius: 50%;
-	margin: 6rem 1rem 6rem 1rem;
-	width: 3rem;
-	height: 3rem;
-	line-height: 3rem;
-	font-size: 2rem;
-	display: inline-block;
-	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-	cursor: pointer;
-	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	color: #333;
-	text-decoration: none;
-	align-self: center;
-	aspect-ratio: 1;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  display: inline-block;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+  align-self: center;
+  aspect-ratio: 1;
 }
 
+/* Estilos do tooltip */
 .tooltip {
-	position: absolute;
-	top: 110%;
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 1.4rem;
-	background-color: #ffffff;
-	color: #ffffff;
-	padding: 0.5rem 0.8rem;
-	border-radius: 0.5rem;
-	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .tooltip::before {
-	position: absolute;
-	content: '';
-	height: 0.8rem;
-	width: 0.8rem;
-	background-color: #ffffff;
-	bottom: -0.3rem;
-	left: 50%;
-	transform: translate(-50%) rotate(45deg);
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  content: '';
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #ffffff;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* Estilos dos ícones específicos */
 .wrapper .icon:hover .tooltip {
-	top: -4.5rem;
-	opacity: 1;
-	visibility: visible;
-	pointer-events: auto;
+  top: -4.5rem;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-	background-color: #0e76a8;
-	color: #ffffff;
+  background-color: #0e76a8;
+  color: #ffffff;
 }
 
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-	background-color: #333333;
-	color: #ffffff;
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .wrapper .whatsapp:hover,
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-	background-color: #25d366;
-	color: #ffffff;
+  background-color: #25d366;
+  color: #ffffff;
 }
 
+/* Estilos do container dos ícones */
 .wrapper {
-	padding-right: 5rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Estilos do currículo */
 .curriculo {
-	padding-right: 5rem;
+  margin: 1rem;
 }
+
 .curriculo .icon-container {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
+
 .curriculo .icon {
-	min-width: 8rem;
+  min-width: 8rem;
 }
+
 .curriculo .text {
-	padding-top: 5px;
-	display: inline-block;
-	vertical-align: middle;
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .curriculo .tooltip {
-	top: 110%;
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 1rem;
-	background-color: #ffffff;
-	color: #ffffff;
-	padding: 0.5rem 0.8rem;
-	border-radius: 0.5rem;
-	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .curriculo .tooltip::before {
-	position: absolute;
-	content: '';
-	height: 0.8rem;
-	width: 0.8rem;
-	background-color: #ffffff;
-	bottom: -0.3rem;
-	left: 50%;
-	transform: translate(-50%) rotate(45deg);
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  content: '';
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #ffffff;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* Estilos para hover do currículo */
 #curriculoBtn:hover .tooltip {
-	top: -4.5rem;
-	opacity: 1;
-	visibility: visible;
-	pointer-events: auto;
+  top: -4.5rem;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 #curriculoBtn:hover,
 #curriculoBtn:hover .tooltip,
 #curriculoBtn:hover .tooltip::before {
-	background-color: blue; /* Choose a color for the tooltip background */
-	color: #ffffff;
+  background-color: blue;
+  color: #ffffff;
 }
 
-.icon-container {
-	position: inherit;
-}
+/* Media query para telas menores */
+@media (max-width: 767px) {
+  #head {
+    flex-direction: column;
+  }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-	#intro {
-		font-size: 2.2rem;
-	}
-	.icon {
-		width: 2.5rem;
-		height: 2.5rem;
-		line-height: 2.5rem;
-		font-size: 1.8rem;
-	}
-}
+  .propic {
+    display: none;
+  }
 
-/* Media query for even smaller screens */
-@media (max-width: 576px) {
-	#intro {
-		font-size: 1.8rem;
-	}
+  .curriculo,
+  .whatsapp,
+  .github,
+  .linkedin {
+    margin: 1rem;
+  }
 }
