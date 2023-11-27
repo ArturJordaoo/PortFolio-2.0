@@ -83,7 +83,7 @@ const Contatos: React.FC = () => {
 			display="flex"
 			justifyContent="center"
 			alignItems="center"
-			minHeight="70vh"
+			minHeight="95vh"
 			id="contatosS"
 		>
 			<form onSubmit={handleSubmit} method="POST">

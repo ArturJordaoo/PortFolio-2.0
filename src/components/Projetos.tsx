@@ -41,8 +41,16 @@ export function Projetos({ habilidades }: ProjetosProps) {
 			nome: 'DiceRoll',
 			habilidades: ['HTML', 'CSS', 'JS'],
 			descricao: 'Um projeto usando HTML, CSS e JavaScript',
-			imagem: 'TESTEIMG',
-			link: 'https://arturjordaoo.github.io/DiceRoll/',
+			imagem: 'DICEROLL',
+			link: 'https://arturjordaoo.github.io/PortFolio/DiceRoll/index.html',
+		},
+		{
+			nome: 'WeatherApp',
+			habilidades: ['React', 'Ajax', 'NextJs'],
+			descricao:
+				'Primeiro projeto utilizando NextJs, realizando integração com a API do OpenWeather',
+			imagem: '',
+			link: '',
 		},
 	]
 
@@ -53,12 +61,14 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		Node: '/images/nodejs.png',
 		React: '/images/physics.png',
 		Postgre: '/images/postgre.png',
+		NextJs: '/images/nextjs.svg',
 	}
 
 	const projetosImagens: Record<string, string> = {
 		CRUDIMG: '/images/Crud_project.png',
 		TODOLISTIMG: '/images/Todoimg.png',
-		TESTEIMG: '/images/Test_project.png',
+		DICEROLL: '/images/DiceRoll.jpeg',
+		WEATHERAPP: '',
 	}
 
 	const projetosFiltrados = habilidades.length

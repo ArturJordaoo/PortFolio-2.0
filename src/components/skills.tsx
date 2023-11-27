@@ -16,6 +16,7 @@ import IconReact from '../../public/images/physics.png'
 import IconPython from '../../public/images/python.png'
 import IconPostgre from '../../public/images/postgre.png'
 import IconBootstrap from '../../public/images/bootstrap.png'
+import IconNextJs from '../../public/images/NextJs.svg'
 
 export function Skills({ onSelectHabilidade }: SkillsProps) {
 	const [selectedSkills, setSelectedSkills] = useState<string[]>([])
@@ -145,6 +146,26 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 						className="sk-img"
 					/>
 					<span>PostgreSql</span>
+				</button>
+				<button
+					className={`skills-img ${
+						isSkillSelected('NextJs') ? 'selected' : ''
+					}`}
+					type="button"
+					onClick={() => handleSkillClick('NextJs')}
+				>
+					{isSkillSelected('NextJs') && (
+						<FontAwesomeIcon
+							icon={faCheck as IconProp}
+							className="check-icon"
+						/>
+					)}
+					<img
+						className="sk-img"
+						src={IconNextJs}
+						alt="program"
+					/>
+					<span>NextJs</span>
 				</button>
 				<button
 					className={`skills-img ${
