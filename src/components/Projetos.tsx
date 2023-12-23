@@ -61,7 +61,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		Node: '/images/nodejs.png',
 		React: '/images/physics.png',
 		Postgre: '/images/postgre.png',
-		NextJs: '/images/nextjs.svg',
+		NextJs: '/images/postgre.png',
 	}
 
 	const projetosImagens: Record<string, string> = {

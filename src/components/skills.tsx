@@ -7,16 +7,18 @@ interface SkillsProps {
 	onSelectHabilidade: (habilidades: string[]) => void
 }
 
+import IconBootstrap from '../../public/images/bootstrap.png'
 import IconCss from '../../public/images/css-3.png'
 import IconGit from '../../public/images/git.png'
 import IconHtml from '../../public/images/html.png'
 import IconJs from '../../public/images/js.png'
 import IconNode from '../../public/images/nodejs.png'
 import IconReact from '../../public/images/physics.png'
+import {
+	default as IconNextJs,
+	default as IconPostgre,
+} from '../../public/images/postgre.png'
 import IconPython from '../../public/images/python.png'
-import IconPostgre from '../../public/images/postgre.png'
-import IconBootstrap from '../../public/images/bootstrap.png'
-import IconNextJs from '../../public/images/NextJs.svg'
 
 export function Skills({ onSelectHabilidade }: SkillsProps) {
 	const [selectedSkills, setSelectedSkills] = useState<string[]>([])
@@ -101,11 +103,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						className="sk-img"
-						src={IconHtml}
-						alt="program"
-					/>
+					<img className="sk-img" src={IconHtml} alt="program" />
 					<span>HTML</span>
 				</button>
 				{/* Add other front-end skills buttons here */}
@@ -140,11 +138,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						src={IconPostgre}
-						alt=""
-						className="sk-img"
-					/>
+					<img src={IconPostgre} alt="" className="sk-img" />
 					<span>PostgreSql</span>
 				</button>
 				<button
@@ -160,11 +154,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						className="sk-img"
-						src={IconNextJs}
-						alt="program"
-					/>
+					<img className="sk-img" src={IconNextJs} alt="program" />
 					<span>NextJs</span>
 				</button>
 				<button
@@ -180,11 +170,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						className="sk-img"
-						src={IconBootstrap}
-						alt="program"
-					/>
+					<img className="sk-img" src={IconBootstrap} alt="program" />
 					<span>Bootstrap</span>
 				</button>
 				{/* Add other "Outras" skills buttons here */}
@@ -203,11 +189,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-					<img
-						src={IconNode}
-						alt="Node"
-						className="sk-img bg-light rounded"
-					/>
+					<img src={IconNode} alt="Node" className="sk-img bg-light rounded" />
 					<span>Node</span>
 				</button>
 				<button
@@ -223,7 +205,7 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 							className="check-icon"
 						/>
 					)}
-            <img src={IconPython} alt="" className="sk-img" />
+					<img src={IconPython} alt="" className="sk-img" />
 					<span>Python</span>
 				</button>
 				{/* Add other backend skills buttons here */}
