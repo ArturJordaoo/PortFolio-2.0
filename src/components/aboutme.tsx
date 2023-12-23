@@ -27,7 +27,7 @@ export function AboutMe() {
 							do término do contrato de estágio, agora atuando com carteira
 							assinada. Experiências na Bonito Artesanato e como Gestor de TI
 							moldaram minha versatilidade. Destaco-me por projetos em React e
-							JavaScript. Estou pronto para desafios no mundo do Front-end!
+							JavaScript. Estou pronto para desafios no mundo do Front-end!.
 						</p>
 					</Col>
 				</Row>
