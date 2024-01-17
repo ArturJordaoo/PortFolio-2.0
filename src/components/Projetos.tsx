@@ -46,11 +46,11 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		},
 		{
 			nome: 'WeatherApp',
-			habilidades: ['React', 'Ajax', 'NextJs'],
+			habilidades: ['React', 'NextJs'],
 			descricao:
 				'Primeiro projeto utilizando NextJs, realizando integração com a API do OpenWeather',
-			imagem: '',
-			link: '',
+			imagem: 'WEATHERAPP',
+			link: 'https://arturweatherapp.vercel.app/',
 		},
 	]
 
@@ -61,14 +61,14 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		Node: '/images/nodejs.png',
 		React: '/images/physics.png',
 		Postgre: '/images/postgre.png',
-		NextJs: '/images/postgre.png',
+		NextJs: '/images/nextjs.png',
 	}
 
 	const projetosImagens: Record<string, string> = {
 		CRUDIMG: '/images/Crud_project.png',
 		TODOLISTIMG: '/images/Todoimg.png',
 		DICEROLL: '/images/DiceRoll.jpeg',
-		WEATHERAPP: '',
+		WEATHERAPP: '/images/weatherapp.png',
 	}
 
 	const projetosFiltrados = habilidades.length

@@ -14,8 +14,8 @@ import IconHtml from '../../public/images/html.png'
 import IconJs from '../../public/images/js.png'
 import IconNode from '../../public/images/nodejs.png'
 import IconReact from '../../public/images/physics.png'
+import IconNextJs from '../../public/images/nextjs.png' 
 import {
-	default as IconNextJs,
 	default as IconPostgre,
 } from '../../public/images/postgre.png'
 import IconPython from '../../public/images/python.png'
