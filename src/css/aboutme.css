@@ -1,22 +1,25 @@
 .aboutpic {
-  max-height: 35rem;
-
+	max-height: 35rem;
 }
 
 #webintro {
-  padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
-#sobre { 
-  background-image: linear-gradient(to left, rgb(231, 225, 243), rgb(136, 116, 198));
-  padding: 2rem 1.5rem;
-  margin-bottom: 3rem;
+#sobre {
+	background-image: linear-gradient(
+		to left,rgb(136, 116, 198),
+		rgb(231, 225, 243)
+		
+	);
+	padding: 2rem 1.5rem;
+	margin-bottom: 3rem;
 }
 
 #sobre h2 {
-  text-align: center;
+	text-align: center;
 }
 
 #abouttxt {
-  text-align: justify;
+	text-align: justify;
 }
