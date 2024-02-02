@@ -16,11 +16,11 @@ export function AboutMe() {
 						<img src={Profilepic} alt="propic" className="aboutpic" />
 					</Col>
 					<Col md={6}>
-						<h3 id="webintro">Desenvolvedor Web</h3>
+						<h3 id="webintro">Desenvolvedor Front-end</h3>
 						<p id="abouttxt">
 							Oi, sou Artur, estudante de Ciências da Computação. Desde 2021,
 							minha jornada na programação começou com Python, e hoje sou
-							apaixonado por Front-end. No 4º período, estou em busca de
+							apaixonado por Front-end. No 5º período, estou em busca de
 							oportunidades nessa área. Durante meu intercâmbio, aprimorei
 							habilidades interculturais. Iniciei como estagiário em Gestor de
 							TI na Serra Leoa e, graças ao meu desempenho, fui efetivado antes

@@ -21,7 +21,7 @@ export function Heading() {
             <div id="heading">
               <h1 id="intro">
                 Olá, sou <br /> <span className="nome">Artur Jordão</span> <br />
-                Desenvolvedor Web
+                Desenvolvedor Front-end
               </h1>
               <div className="wrapper">
                 <a

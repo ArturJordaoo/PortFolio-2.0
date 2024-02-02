@@ -9,7 +9,6 @@ interface SkillsProps {
 
 import IconBootstrap from '../../public/images/bootstrap.png'
 import IconCss from '../../public/images/css-3.png'
-import IconGit from '../../public/images/git.png'
 import IconHtml from '../../public/images/html.png'
 import IconJs from '../../public/images/js.png'
 import IconNode from '../../public/images/nodejs.png'
@@ -111,20 +110,6 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 
 			<section className="skill-section">
 				<h3>Outras</h3>
-				<button
-					className={`skills-img ${isSkillSelected('Git') ? 'selected' : ''}`}
-					type="button"
-					onClick={() => handleSkillClick('Git')}
-				>
-					{isSkillSelected('Git') && (
-						<FontAwesomeIcon
-							icon={faCheck as IconProp}
-							className="check-icon"
-						/>
-					)}
-					<img src={IconGit} alt="" className="sk-img" />
-					<span>Git</span>
-				</button>
 				<button
 					className={`skills-img ${
 						isSkillSelected('PostgreSql') ? 'selected' : ''
