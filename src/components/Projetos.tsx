@@ -8,9 +8,6 @@ import {
 	Wrap,
 	WrapItem,
 } from '@chakra-ui/react'
-import '../css/project.css'
-import { Carousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 interface ProjetoProps {
 	nome: string
@@ -55,7 +52,6 @@ export function Projetos({ habilidades }: ProjetosProps) {
 			imagem: 'WEATHERAPP',
 			link: 'https://arturweatherapp.vercel.app/',
 		},
-		// Adicione outros projetos conforme necessário
 	]
 
 	const habilidadesImagens: Record<string, string> = {
@@ -83,17 +79,18 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		  )
 		: projetos
 
-	const projetosPorSlide = 3 // Defina quantos projetos deseja exibir por slide
-	const slides = []
-
-	for (let i = 0; i < projetosFiltrados.length; i += projetosPorSlide) {
-		slides.push(
-			<Grid
-				key={i}
-				templateColumns={`repeat(${projetosPorSlide}, 1fr)`}
-				gap="1rem"
-			>
-				{projetosFiltrados.slice(i, i + projetosPorSlide).map((projeto) => (
+	return (
+		<Box
+			id="project"
+			py="4rem"
+			px="3rem"
+			bgGradient="linear(to left, rgb(231, 225, 243), rgb(136, 116, 198))"
+		>
+			<Heading as="h2" size="xl" mb="2rem">
+				Projetos
+			</Heading>
+			<Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap="1rem">
+				{projetosFiltrados.map((projeto) => (
 					<Box
 						key={projeto.nome}
 						p="2.5rem"
@@ -108,6 +105,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 							src={projetosImagens[projeto.imagem]}
 							alt={projeto.nome}
 							className="imagensProjeto"
+							p="1rem"
 						/>
 						<Button
 							as="a"
@@ -135,30 +133,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
 						</Wrap>
 					</Box>
 				))}
-			</Grid>,
-		)
-	}
-
-	return (
-		<Box
-			id="project"
-			py="4rem"
-			px="3rem"
-			bgGradient="linear(to left, rgb(231, 225, 243), rgb(136, 116, 198))"
-		>
-			<Heading as="h2" size="xl" mb="2rem">
-				Projetos
-			</Heading>
-			<Carousel
-				className="carousel"
-				showArrows={true}
-				showStatus={false}
-				showThumbs={false}
-			>
-				{slides.map((slide, index) => (
-					<div key={index}>{slide}</div>
-				))}
-			</Carousel>
+			</Grid>
 		</Box>
 	)
 }
