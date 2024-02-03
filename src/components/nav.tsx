@@ -39,7 +39,7 @@ export function Nav() {
 							to="sobre"
 							spy={true}
 							smooth={true}
-							offset={-70}
+							offset={-63}
 							duration={500}
 							onClick={closeMenu}
 						>

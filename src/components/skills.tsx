@@ -41,11 +41,13 @@ export function Skills({ onSelectHabilidade }: SkillsProps) {
 	return (
 		<div id="skills">
 			<h2>Skills</h2>
-			<p>possuo diversas habilidades, mas porque não mostrá-las em projetos</p>
-			<p>
-				apenas clicar em uma delas que elas filtram os projetos em que são
+			<p>possuo diversas habilidades, mas porque não mostrá-las em projetos
+				<br />
+				<br />
+			apenas clicar em uma delas que elas filtram os projetos em que são
 				aplicadas
 			</p>
+
 
 			<section className="skill-section">
 				<h3>Front-end skills</h3>

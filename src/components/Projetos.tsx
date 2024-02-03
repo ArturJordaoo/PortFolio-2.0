@@ -8,7 +8,7 @@ import {
 	Wrap,
 	WrapItem,
 } from '@chakra-ui/react'
-
+import '../css/project.css'
 interface ProjetoProps {
 	nome: string
 	habilidades: string[]
@@ -80,60 +80,58 @@ export function Projetos({ habilidades }: ProjetosProps) {
 		: projetos
 
 	return (
-		<Box
-			id="project"
-			py="4rem"
-			px="3rem"
-			bgGradient="linear(to left, rgb(231, 225, 243), rgb(136, 116, 198))"
-		>
-			<Heading as="h2" size="xl" mb="2rem">
-				Projetos
-			</Heading>
-			<Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap="1rem">
-				{projetosFiltrados.map((projeto) => (
-					<Box
-						key={projeto.nome}
-						p="2.5rem"
-						borderWidth="2px"
-						borderRadius="lg"
-						shadow="md"
-					>
-						<Heading as="h3" size="md" mb="1rem">
-							{projeto.nome}
-						</Heading>
-						<ChakraImage
-							src={projetosImagens[projeto.imagem]}
-							alt={projeto.nome}
-							className="imagensProjeto"
-							p="1rem"
-						/>
-						<Button
-							as="a"
-							href={projeto.link}
-							target="_blank"
-							rel="noopener noreferrer"
-							colorScheme="teal"
-							mb="1rem"
-							isDisabled={!projeto.link}
+		<div id="project">
+			<h2>Projetos</h2>
+			<div className="project-container">
+				<Grid
+					templateColumns="repeat(auto-fit, minmax(400px, 1fr))"
+					gap="1rem"
+				>
+					{projetosFiltrados.map((projeto) => (
+						<Box
+							key={projeto.nome}
+							p='1rem'
+							borderWidth="4px"
+							borderRadius="lg"
+							shadow="md"
 						>
-							acesse aqui
-						</Button>
-						<Text mb="1rem">{projeto.descricao}</Text>
-						<Wrap spacing="1rem" mb="1rem">
-							{projeto.habilidades.map((habilidade) => (
-								<WrapItem key={habilidade}>
-									<ChakraImage
-										src={habilidadesImagens[habilidade]}
-										alt={habilidade}
-										w="2rem"
-										h="2rem"
-									/>
-								</WrapItem>
-							))}
-						</Wrap>
-					</Box>
-				))}
-			</Grid>
-		</Box>
+							<Heading as="h3" size="md" mb="1rem">
+								{projeto.nome}
+							</Heading>
+							<ChakraImage
+								src={projetosImagens[projeto.imagem]}
+								alt={projeto.nome}
+								className="imagensProjeto"
+								p="1rem"
+							/>
+							<Button
+								as="a"
+								href={projeto.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								colorScheme="teal"
+								mb="1rem"
+								isDisabled={!projeto.link}
+							>
+								acesse aqui
+							</Button>
+							<Text mb="1rem">{projeto.descricao}</Text>
+							<Wrap spacing="1rem" mb="1rem">
+								{projeto.habilidades.map((habilidade) => (
+									<WrapItem key={habilidade}>
+										<ChakraImage
+											src={habilidadesImagens[habilidade]}
+											alt={habilidade}
+											w="2rem"
+											h="2rem"
+										/>
+									</WrapItem>
+								))}
+							</Wrap>
+						</Box>
+					))}
+				</Grid>
+			</div>
+		</div>
 	)
 }
