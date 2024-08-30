@@ -1,16 +1,16 @@
 // heading.js
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
   faGithub,
   faLinkedin,
   faWhatsapp,
-} from '@fortawesome/free-brands-svg-icons'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Col, Container, Row } from 'react-bootstrap'
-import Curriculo from '../assets/CurriculoArtur(maio).pdf'
-import head from '../assets/head.svg'
-import '../css/heading.css'
+} from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Col, Container, Row } from 'react-bootstrap';
+import Curriculo from '../assets/CurriculoArtur(maio).pdf';
+import head from '../assets/head.svg';
+import '../css/heading.css';
 
 export function Heading() {
   return (
@@ -20,8 +20,9 @@ export function Heading() {
           <Col xs={12} sm={12} md={6}>
             <div id="heading">
               <h1 id="intro">
-                Olá, sou <br /> <span className="nome">Artur Jordão</span> <br />
-                Desenvolvedor Front-end
+                Olá, sou <br /> <span className="nome">Artur Jordão</span>{' '}
+                <br />
+                Desenvolvedor Full-stack
               </h1>
               <div className="wrapper">
                 <a
@@ -98,5 +99,5 @@ export function Heading() {
         </Row>
       </Container>
     </div>
-  )
+  );
 }
