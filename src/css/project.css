@@ -1,13 +1,11 @@
 #project {
-	background-image: linear-gradient(
-		to left,
-		rgb(136, 116, 198),
-		rgb(231, 225, 243)
-	);
-	min-height: 100vh;
-	padding: 1.5rem 2rem;
+  background-image: linear-gradient(
+    to left,
+    rgb(136, 116, 198),
+    rgb(231, 225, 243)
+  );
+  min-height: 100vh;
+  padding: 1.5rem 2rem;
 }
-.project-container{
-	display: flex;
-	margin-top: 10rem;
+.carousel-item {
 }
