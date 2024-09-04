@@ -45,14 +45,14 @@ export function Projetos({ habilidades }: ProjetosProps) {
     {
       nome: 'DiceRoll',
       habilidades: ['HTML', 'CSS', 'JS'],
-      descricao: 'Um projeto usando HTML, CSS e JavaScript',
+      descricao: 'Um projeto  de um jogo de dado usando HTML, CSS e JavaScript',
       imagem: 'DICEROLL',
       link: 'https://arturjordaoo.github.io/PortFolio/DiceRoll/index.html',
     },
     {
       nome: 'WeatherApp',
       habilidades: ['React', 'NextJs'],
-      descricao: 'Projeto em Next.js com integração de API',
+      descricao: 'Projeto em Next.js com integração de API do OpenWeather',
       imagem: 'WEATHERAPP',
       link: 'https://arturweatherapp.vercel.app/',
     },
@@ -113,6 +113,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
           autoPlay={false}
           keyBoardControl={true}
           showDots={true}
+          max-h="90vh"
         >
           {projetosFiltrados.map((projeto) => (
             <Box
@@ -127,6 +128,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
               display="flex"
               flexDirection="column"
               justifyContent="space-between"
+              my="50px"
             >
               <Heading as="h3" size="md" mb="1rem">
                 {projeto.nome}
