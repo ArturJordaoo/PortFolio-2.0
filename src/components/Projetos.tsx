@@ -29,9 +29,8 @@ export function Projetos({ habilidades }: ProjetosProps) {
   const projetos: ProjetoProps[] = [
     {
       nome: 'CRUD',
-      habilidades: ['React', 'Node', 'Postgre'],
-      descricao:
-        'Projeto Simples de um Crud com integração com o banco de dados',
+      habilidades: ['React', 'Node', 'PostgreSql'],
+      descricao: 'Projeto de um CRUD integrando com o banco de dados',
       imagem: 'CRUDIMG',
       link: 'https://github.com/ArturJordaoo/CRUD-REACT-NODE-PostgreSql',
     },
@@ -52,7 +51,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
     {
       nome: 'WeatherApp',
       habilidades: ['React', 'NextJs'],
-      descricao: 'Projeto em Next.js com integração de API do OpenWeather',
+      descricao: 'Projeto realiado em Next.js com integração de API ',
       imagem: 'WEATHERAPP',
       link: 'https://arturweatherapp.vercel.app/',
     },
@@ -64,7 +63,7 @@ export function Projetos({ habilidades }: ProjetosProps) {
     JS: '/images/js.png',
     Node: '/images/nodejs.png',
     React: '/images/physics.png',
-    Postgre: '/images/postgre.png',
+    PostgreSql: '/images/postgre.png',
     NextJs: '/images/nextjs.png',
   };
 
@@ -112,7 +111,6 @@ export function Projetos({ habilidades }: ProjetosProps) {
           infinite={false}
           autoPlay={false}
           keyBoardControl={true}
-          showDots={true}
           max-h="90vh"
         >
           {projetosFiltrados.map((projeto) => (
