@@ -7,9 +7,9 @@
   text-align: center !important;
   display: flex !important;
   align-items: center !important;
+  height: 100vh;
 }
-
-#intro {
+a #intro {
   text-align: left;
   padding-top: 2rem;
   font-size: clamp(2rem, 3vw, 5rem);

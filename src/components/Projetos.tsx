@@ -11,11 +11,26 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../css/project.css';
 
-// Define the types
+// Project Images
+import CrudProjectImg from '../images/Crud_project.png';
+import DiceRollImg from '../images/DiceRoll.jpeg';
+import TodoImg from '../images/Todoimg.png';
+import WeatherAppImg from '../images/weatherapp.jpg';
+
+// Skill Images
+import CssImg from '../images/css-3.png';
+import HtmlImg from '../images/html.png';
+import JsImg from '../images/js.png';
+import NextJsImg from '../images/nextjs.png';
+import NodeImg from '../images/nodejs.png';
+import ReactImg from '../images/physics.png'; // Assuming 'physics.png' is the React icon
+import PostgreImg from '../images/postgre.png';
+
 interface ProjetoProps {
   nome: string;
   habilidades: string[];
   descricao: string;
+  // 2. Updated type to hold the imported image URL (which is a string)
   imagem: string;
   link: string;
 }
@@ -25,57 +40,52 @@ interface ProjetosProps {
 }
 
 export function Projetos({ habilidades }: ProjetosProps) {
-  // List of projects
+  const habilidadesImagens: Record<string, string> = {
+    HTML: HtmlImg,
+    CSS: CssImg,
+    JS: JsImg,
+    Node: NodeImg,
+    React: ReactImg,
+    Postgre: PostgreImg,
+    NextJs: NextJsImg,
+  };
+
   const projetos: ProjetoProps[] = [
     {
       nome: 'CRUD',
       habilidades: ['React', 'Node', 'Postgre'],
       descricao:
         'Projeto Simples de um Crud com integração com o banco de dados',
-      imagem: 'CRUDIMG',
+
+      imagem: CrudProjectImg,
       link: 'https://github.com/ArturJordaoo/CRUD-REACT-NODE-PostgreSql',
     },
     {
       nome: 'TO DO LIST',
       habilidades: ['HTML', 'CSS', 'JS'],
       descricao: 'Aplicação simples de um CRUD utilizando InternalStorage',
-      imagem: 'TODOLISTIMG',
+
+      imagem: TodoImg,
       link: 'https://arturjordaoo.github.io/ToDoApp/',
     },
     {
       nome: 'DiceRoll',
       habilidades: ['HTML', 'CSS', 'JS'],
-      descricao: 'Um projeto  de um jogo de dado usando HTML, CSS e JavaScript',
-      imagem: 'DICEROLL',
+      descricao: 'Um projeto de um jogo de dado usando HTML, CSS e JavaScript',
+
+      imagem: DiceRollImg,
       link: 'https://arturjordaoo.github.io/PortFolio/DiceRoll/index.html',
     },
     {
       nome: 'WeatherApp',
       habilidades: ['React', 'NextJs'],
       descricao: 'Projeto em Next.js com integração de API do OpenWeather',
-      imagem: 'WEATHERAPP',
+
+      imagem: WeatherAppImg,
       link: 'https://arturweatherapp.vercel.app/',
     },
   ];
 
-  const habilidadesImagens: Record<string, string> = {
-    HTML: '/images/html.png',
-    CSS: '/images/css-3.png',
-    JS: '/images/js.png',
-    Node: '/images/nodejs.png',
-    React: '/images/physics.png',
-    Postgre: '/images/postgre.png',
-    NextJs: '/images/nextjs.png',
-  };
-
-  const projetosImagens: Record<string, string> = {
-    CRUDIMG: '/images/Crud_project.png',
-    TODOLISTIMG: '/images/Todoimg.png',
-    DICEROLL: '/images/DiceRoll.jpeg',
-    WEATHERAPP: '/images/weatherapp.jpg',
-  };
-
-  // Filter projects based on selected skills
   const projetosFiltrados = habilidades.length
     ? projetos.filter((projeto) =>
         habilidades.some((habilidade: string) =>
@@ -133,8 +143,9 @@ export function Projetos({ habilidades }: ProjetosProps) {
               <Heading as="h3" size="md" mb="1rem">
                 {projeto.nome}
               </Heading>
+              {/* 6. Rendering: Now using projeto.imagem directly */}
               <ChakraImage
-                src={projetosImagens[projeto.imagem]}
+                src={projeto.imagem}
                 alt={projeto.nome}
                 className="imagensProjeto"
                 p="1rem"

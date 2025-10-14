@@ -8,7 +8,7 @@ import {
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Container, Row } from 'react-bootstrap';
-import Curriculo from '../assets/CurriculoArtur(maio).pdf';
+import Curriculo from '../assets/CURRICULO OUTUBRO.pdf';
 import head from '../assets/head.svg';
 import '../css/heading.css';
 
