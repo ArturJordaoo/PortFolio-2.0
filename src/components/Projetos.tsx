@@ -111,7 +111,7 @@ export function Projetos() {
       </Heading>
 
       <Box display="flex" justifyContent="center" alignItems="center" w="100%">
-        <Box maxW="70%" w="100%">
+        <Box maxW="80%" w="100%" mt={4}>
           <Carousel
             responsive={responsive}
             infinite={false}
@@ -122,57 +122,63 @@ export function Projetos() {
             {projetos.map((projeto) => (
               <Box
                 key={projeto.nome}
+                as="a"
+                href={projeto.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 p={5}
                 borderWidth="1px"
                 borderRadius="lg"
                 shadow="md"
-                transition="transform 0.2s"
-                _hover={{ transform: 'translateY(-2px)', shadow: 'lg' }}
+                className="project-card-content" // ⬅️ Classe para controle de altura
+                transition="transform 0.2s, box-shadow 0.2s"
+                _hover={{
+                  transform: 'translateY(-1px)',
+                  shadow: 'lg',
+                  cursor: 'pointer',
+                }}
                 textAlign="center"
               >
-                <Heading as="h3" size="md" mb={3}>
-                  {projeto.nome}
-                </Heading>
+                <Box>
+                  <Heading as="h3" size="md" mb={3}>
+                    {projeto.nome}
+                  </Heading>
 
-                <ChakraImage
-                  src={projeto.imagem}
-                  alt={projeto.nome}
-                  borderRadius="md"
-                  h="250px"
-                  w="100%"
-                  objectFit="contain"
-                  p={2}
-                  mb={3}
-                />
+                  <ChakraImage
+                    src={projeto.imagem}
+                    alt={projeto.nome}
+                    borderRadius="md"
+                    h="200px"
+                    w="100%"
+                    objectFit="contain"
+                    p={2}
+                    mb={3}
+                  />
 
-                <Text mb={3} noOfLines={3}>
-                  {projeto.descricao}
-                </Text>
+                  <Text mb={3} noOfLines={3}>
+                    {projeto.descricao}
+                  </Text>
+                </Box>
 
-                <Wrap spacing="0.5rem" mb={3} justify="center">
-                  {projeto.habilidades.map((h) =>
-                    habilidadesImagens[h] ? (
-                      <WrapItem key={h}>
-                        <ChakraImage
-                          src={habilidadesImagens[h]}
-                          alt={h}
-                          w="2rem"
-                          h="2rem"
-                        />
-                      </WrapItem>
-                    ) : null,
-                  )}
-                </Wrap>
+                <Box>
+                  <Wrap spacing="0.5rem" mb={3} justify="center">
+                    {projeto.habilidades.map((h) =>
+                      habilidadesImagens[h] ? (
+                        <WrapItem key={h}>
+                          <ChakraImage
+                            src={habilidadesImagens[h]}
+                            alt={h}
+                            w="2rem"
+                            h="2rem"
+                          />
+                        </WrapItem>
+                      ) : null,
+                    )}
+                  </Wrap>
 
-                <Button
-                  as="a"
-                  href={projeto.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  colorScheme="teal"
-                >
-                  Acessar Projeto
-                </Button>
+                  {/* O botão é mantido, mas agora é um elemento dentro do link principal */}
+                  <Button colorScheme="teal">Acessar Projeto</Button>
+                </Box>
               </Box>
             ))}
           </Carousel>

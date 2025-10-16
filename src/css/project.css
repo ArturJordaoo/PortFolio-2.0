@@ -7,6 +7,20 @@
   min-height: 100vh;
   padding: 3rem 2rem;
 }
+
 .carousel-item-padding {
   padding: 0 12px;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.react-multi-carousel-item {
+  height: 100%;
 }
