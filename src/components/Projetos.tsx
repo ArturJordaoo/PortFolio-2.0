@@ -106,71 +106,78 @@ export function Projetos() {
 
   return (
     <section id="project">
-      <h2>Projetos</h2>
-      <div className="project-container">
-        <Carousel
-          responsive={responsive}
-          infinite={false}
-          autoPlay={false}
-          keyBoardControl
-        >
-          {projetos.map((projeto) => (
-            <Box
-              key={projeto.nome}
-              p={4}
-              borderWidth="2px"
-              borderRadius="lg"
-              shadow="md"
-              textAlign="center"
-              mx={2}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              minH="380px"
-            >
-              <Heading as="h3" size="md" mb={3}>
-                {projeto.nome}
-              </Heading>
+      <Heading mb={8}>
+        <h2>Projetos</h2>
+      </Heading>
 
-              <ChakraImage
-                src={projeto.imagem}
-                alt={projeto.nome}
-                className="imagensProjeto"
-                borderRadius="md"
-                objectFit="cover"
-                mb={3}
-              />
-
-              <Text mb={3}>{projeto.descricao}</Text>
-
-              <Wrap spacing="0.5rem" mb={3} justify="center">
-                {projeto.habilidades.map((h) =>
-                  habilidadesImagens[h] ? (
-                    <WrapItem key={h}>
-                      <ChakraImage
-                        src={habilidadesImagens[h]}
-                        alt={h}
-                        w="2rem"
-                        h="2rem"
-                      />
-                    </WrapItem>
-                  ) : null,
-                )}
-              </Wrap>
-
-              <Button
-                as="a"
-                href={projeto.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                colorScheme="teal"
+      <Box display="flex" justifyContent="center" alignItems="center" w="100%">
+        <Box maxW="70%" w="100%">
+          <Carousel
+            responsive={responsive}
+            infinite={false}
+            autoPlay={false}
+            keyBoardControl
+            itemClass="carousel-item-padding"
+          >
+            {projetos.map((projeto) => (
+              <Box
+                key={projeto.nome}
+                p={5}
+                borderWidth="1px"
+                borderRadius="lg"
+                shadow="md"
+                transition="transform 0.2s"
+                _hover={{ transform: 'translateY(-2px)', shadow: 'lg' }}
+                textAlign="center"
               >
-                Acessar Projeto
-              </Button>
-            </Box>
-          ))}
-        </Carousel>
-      </div>
+                <Heading as="h3" size="md" mb={3}>
+                  {projeto.nome}
+                </Heading>
+
+                <ChakraImage
+                  src={projeto.imagem}
+                  alt={projeto.nome}
+                  borderRadius="md"
+                  h="250px"
+                  w="100%"
+                  objectFit="contain"
+                  p={2}
+                  mb={3}
+                />
+
+                <Text mb={3} noOfLines={3}>
+                  {projeto.descricao}
+                </Text>
+
+                <Wrap spacing="0.5rem" mb={3} justify="center">
+                  {projeto.habilidades.map((h) =>
+                    habilidadesImagens[h] ? (
+                      <WrapItem key={h}>
+                        <ChakraImage
+                          src={habilidadesImagens[h]}
+                          alt={h}
+                          w="2rem"
+                          h="2rem"
+                        />
+                      </WrapItem>
+                    ) : null,
+                  )}
+                </Wrap>
+
+                <Button
+                  as="a"
+                  href={projeto.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  colorScheme="teal"
+                >
+                  Acessar Projeto
+                </Button>
+              </Box>
+            ))}
+          </Carousel>
+        </Box>
+      </Box>
     </section>
   );
 }
