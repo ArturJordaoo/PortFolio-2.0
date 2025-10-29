@@ -16,13 +16,19 @@ export function AboutMe() {
             <img src={Profilepic} alt="propic" className="aboutpic" />
           </Col>
           <Col md={6}>
-            <h3 id="webintro">Desenvolvedor Full-stack</h3>
+            <h3 id="webintro">
+              {' '}
+              “Um dos meus dias mais produtivos foi quando eu joguei fora 1000
+              linhas de código.” – Ken Thompson
+            </h3>
             <p id="abouttxt">
-              Oi, sou Artur, estudante de Ciências da Computação. Atualmente no
-              7º período, estou em busca de oportunidades nessa área. Durante
-              meu intercâmbio, aprimorei habilidades interculturais e meu
-              inglês. Destaco-me por projetos em NextJs e NestJs. Estou pronto
-              para desafios no mundo do Full-Stack!.
+              É com essa frase que me apresento, sou estudante em final de
+              formação em Ciências da Computação. Sou um desenvolvedor fullstack
+              com paixão em JavaScript, React e tudo sobre desenvolvimento web.
+              Acredito no aprendizado contínuo, atualmente me atualizando sobre
+              sistemas com usos de kubernetes e AWS. Possuo conhecimento geral
+              em diversas tecnologias, mas a principal que estou utilizando é o
+              NextJs junto com TailwindCss para desenvolvimento de sistemas.
             </p>
           </Col>
         </Row>
