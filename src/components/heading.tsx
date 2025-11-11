@@ -27,7 +27,7 @@ export function Heading() {
               <div className="wrapper">
                 <a
                   className="linkedin icon"
-                  href="www.linkedin.com/in/artur-jordaoo"
+                  href="https://linkedin.com/in/artur-jordaoo"
                   role="button"
                   id="linkedinBtn"
                   target="_blank"
