@@ -8,7 +8,7 @@ import {
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Container, Row } from 'react-bootstrap';
-import Curriculo from '../assets/CURRICULO OUTUBRO.pdf';
+import Curriculo from '../assets/CURRICULO_ARTUR_FULL_STACK.pdf';
 import head from '../assets/head.svg';
 import '../css/heading.css';
 
@@ -72,7 +72,7 @@ export function Heading() {
                 <a
                   className="btn btn-light icon"
                   href={Curriculo}
-                  download="Curriculo"
+                  download="Curriculo_Artur_FullStack"
                   role="button"
                   id="curriculoBtn"
                   target="_blank"
